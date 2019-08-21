@@ -5,5 +5,6 @@ def nyc_pigeon_organizer(data)
       array.each do |name|
         if sorted_pigeon_hash.include?(name)
           sorted_pigeon_hash[name] = {}
+      
 
 end
