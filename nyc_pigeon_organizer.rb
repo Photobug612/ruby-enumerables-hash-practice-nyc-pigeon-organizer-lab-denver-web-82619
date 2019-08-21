@@ -8,6 +8,6 @@ def nyc_pigeon_organizer(data)
         end
         if !sorted_pigeon_hash[name]include?(info)
           sorted_pigeon_hash[name][info] = []
-          
+        end
 
 end
