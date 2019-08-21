@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
 
         if !pigeon_hash[name].has_key?(quality)
           pigeon_hash[name][quality] = []
-        
+        end
 
         if !pigeon_hash[name][quality].include?(char)
           pigeon_hash[name][quality] << char.to_s
@@ -19,5 +19,4 @@ def nyc_pigeon_organizer(data)
   end
   new_hash
 end
-
 
