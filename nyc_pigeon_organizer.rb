@@ -4,5 +4,6 @@ def nyc_pigeon_organizer(data)
     hash.each do |descriptor, array|
       array.each do |name|
         if sorted_pigeon_hash.include?(name)
+          sorted_pigeon_hash
 
 end
