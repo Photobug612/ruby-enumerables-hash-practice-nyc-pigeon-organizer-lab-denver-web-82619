@@ -13,6 +13,7 @@ def nyc_pigeon_organizer(data)
           sorted_pigeon_hash[name][info] << descriptor.to_s 
         end
       end
-    end  
+    end
+  end  
      sorted_pigeon_hash
 end
