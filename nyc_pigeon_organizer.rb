@@ -10,6 +10,6 @@ def nyc_pigeon_organizer(data)
           sorted_pigeon_hash[name][info] = []
         end
         if !sorted_pigeon_hash[name][info].include?(descriptor)
-          sorted_pigeon_hash[name][info] << descriptor.do
+          sorted_pigeon_hash[name][info] << descriptor.to_s
 
 end
