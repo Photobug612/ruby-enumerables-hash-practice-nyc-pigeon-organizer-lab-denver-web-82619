@@ -1,19 +1,22 @@
 def nyc_pigeon_organizer(data)
-  sorted_pigeon_hash = {}
-  data.each do |info, hash|
-    hash.each do |descriptor, array|
+  # write your code here!
+  new_hash = {}
+  data.each do |property, hash|
+    hash.each do |attribute, array|
       array.each do |name|
-        if !sorted_pigeon_hash.incude?(name)
-          sorted_pigeon_hash[name] = {}
+        if !new_hash.has_key?(name)
+          new_hash[name] = {}
         end
-        if !sorted_pigeon_hash[name].incude?(info)
-          sorted_pigeon_hash[name][info] = []
+
+        if !new_hash[name].has_key?(property)
+          new_hash[name][property] = []
         end
-        if !sorted_pigeon_hash[name][info].include?(descriptor)
-          sorted_pigeon_hash[name]<< descriptor.to_s 
+
+        if !new_hash[name][property].include?(attribute)
+          new_hash[name][property] << attribute.to_s
         end
       end
     end
-  end  
-     sorted_pigeon_hash
+  end
+  new_hash
 end
