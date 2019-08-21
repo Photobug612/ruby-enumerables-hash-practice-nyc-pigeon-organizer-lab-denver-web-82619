@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   pigeon_hash = {}
   data.each do |discriptor, hash|
-    hash.each do |quakity, array|
+    hash.each do |quality, array|
       array.each do |name|
         if !pigeon_hash.has_key?(name)
           new_hash[name] = {}
@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
         end
 
         if !pigeon_hash[name][property].include?(attribute)
-          pi[name][discriptor] << attribute.to_s
+          pi[name][discriptor] << quality.to_s
         end
       end
     end
