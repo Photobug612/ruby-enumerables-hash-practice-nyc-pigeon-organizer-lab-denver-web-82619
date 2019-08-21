@@ -6,9 +6,9 @@ def nyc_pigeon_organizer(data)
         if sorted_pigeon_hash.include?(name)
           sorted_pigeon_hash[name] = {}
         end
-        if !sorted_pigeon_hash[name]include?(info)
+        if !sorted_pigeon_hash[name].include?(info)
           sorted_pigeon_hash[name][info] = []
         end
-        if !sorted_pigeon_hash[name][info]
+        if !sorted_pigeon_hash[name][info].include?
 
 end
