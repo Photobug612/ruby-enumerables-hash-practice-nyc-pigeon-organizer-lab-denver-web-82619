@@ -8,11 +8,11 @@ def nyc_pigeon_organizer(data)
         end
 
         if !pigeon_hash[name].has_key?(property)
-          pigeon_hash[name][property] = []
+          pigeon_hash[name][discriptor] = []
         end
 
         if !pigeon_hash[name][property].include?(attribute)
-          pi[name][property] << attribute.to_s
+          pi[name][discriptor] << attribute.to_s
         end
       end
     end
