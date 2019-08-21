@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
         end
 
         if !pigeon_hash[name][descriptor].include?(quality)
-          pi[name][descriptor] << quality.to_s
+          pigeon_hash[name][descriptor] << quality.to_s
         end
       end
     end
